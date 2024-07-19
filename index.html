@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BOOKLIST APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1> <i class="fa-solid fa-book-open booklogo"></i> My<span>Book</span>List</h1>
+
+        <form id="book-form">
+
+            <label>Title</label>
+            <input type="text" id="title" />
+
+            <label>Author</label>
+            <input type="text" id="author" />
+
+            <label>ISBN</label>
+            <input type="text" id="isbn" />
+
+            <input type="submit" placeholder="Add Book" class="btn" />
+        </form>
+
+
+        <table class="table-content">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js" />
+</body>
+
+</html>

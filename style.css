@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 40px;
+}
+
+.container h1 .booklogo {
+    font-size: 45px;
+    color: rgb(77, 166, 201);
+}
+
+.container h1 span {
+    color: rgb(77, 166, 201);
+}
+
+form {
+    width: 80%;
+    margin-top: 10px;
+}
+
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    height: 35px;
+    padding: 7px;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.btn {
+    margin: 15px 0px;
+    background-color: rgb(33, 119, 153);
+    color: white;
+    font-size: 16px;
+    height: 35px;
+}
+
+.table-content {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    width: 80%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-content thead tr {
+    background-color: #009879;
+    color: #ffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-content td {
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+.table-content th {
+    padding: 12px 15px;
+}
+
+.table-content #book-list tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.delete {
+    font-size: 20px;
+    color: black;
+    padding: 2px 8px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.delete:hover {
+    color: red;
+}
+
+.alert {
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    margin: 10px 0px;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.success {
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgb(29, 237, 10);
+    color: white;
+    margin: 10px 0px;
+    padding: 3px 0;
+    text-align: center;
+}
+
+
+@media (max-width: 500px) {
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container h1 .booklogo {
+        font-size: 35px;
+    }
+
+
+    form label {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    form input {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 30px;
+        padding: 2px 0;
+    }
+
+    .table-content {
+        font-size: 15px;
+    }
+
+    .table-content td {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+
+    .table-content th {
+        padding: 12px 15px;
+    }
+
+    .alert {
+        height: 25px;
+        font-size: 16px;
+        margin: 6px 0px;
+    }
+
+    .success {
+        height: 25px;
+        font-size: 16px;
+        margin: 6px 0px;
+    }
+
+    .delete {
+        padding: 1px 6px;
+        border: 2px solid black;
+    }
+
+}
